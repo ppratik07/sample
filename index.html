@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avada Cabin Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+    }
+
+    /* Header */
+    .header {
+      background: url('https://images.unsplash.com/photo-1609775155827-efd562e246f0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+      height: 50vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+      position: relative;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 10%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .login-btn {
+      border: 2px solid #f15a29;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      color: #f15a29;
+      background-color: transparent;
+    }
+
+    .header-content {
+      margin-top: auto;
+      padding-bottom: 4rem;
+    }
+
+    .header-content h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .header-content p {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    /* Rental Section */
+    .rental-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 10%;
+    }
+
+    .rental-form {
+      flex: 1;
+      margin-right: 3rem;
+    }
+
+    .rental-form h5 {
+      color: #e84b1e;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .rental-form h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .rental-form p {
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .rental-form input,
+    .rental-form textarea {
+      width: 48%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .rental-form input[type="email"],
+    .rental-form input[type="tel"] {
+      width: 48%;
+    }
+
+    .rental-form textarea {
+      width: 100%;
+      resize: none;
+      height: 100px;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .rental-form button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #e84b1e;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .rental-image {
+      flex: 1;
+    }
+
+    .rental-image img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .rental-section {
+        flex-direction: column;
+      }
+
+      .form-group {
+        flex-direction: column;
+      }
+
+      .rental-form input,
+      .rental-form textarea {
+        width: 100%;
+      }
+
+      .rental-form {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <div class="navbar">
+      <img src="https://i.imgur.com/3CxWuFR.png" alt="Avada Logo" height="60">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cabin Blog</a></li>
+        <li><a href="#">Real Estate</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><button class="login-btn">LOG IN</button></li>
+      </ul>
+    </div>
+    <div class="header-content">
+      <h1>Unlock Your Cabin’s Full Earning Power With Avada</h1>
+      <p>Full-service property management company in Gatlinburg, Pigeon Forge & Sevierville.</p>
+    </div>
+  </header>
+
+  <!-- RENTAL PROJECTION SECTION -->
+  <section class="rental-section">
+    <div class="rental-form">
+      <h5>Wondering how much more your cabin could earn?</h5>
+      <h2>Claim your rental projection!</h2>
+      <p>
+        Along with your free rental analysis, we’ll provide expert advice tailored to your cabin’s unique potential,
+        helping you achieve the highest possible rental income.
+      </p>
+
+      <div class="form-group">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Phone" />
+      </div>
+      <textarea placeholder="Tell us about your cabin"></textarea>
+      <button>GET MY RENTAL PROJECTION</button>
+    </div>
+    <div class="rental-image">
+      <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cabin House">
+    </div>
+  </section>
+
+</body>
+</html>
