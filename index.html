@@ -1,225 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avada Cabin Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      background-color: #fff;
-      color: #111;
-    }
-
-    /* Header */
-    .header {
-      background: url('https://images.unsplash.com/photo-1609775155827-efd562e246f0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-      height: 50vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 10%;
-      position: relative;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 10%;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
-
-    .navbar ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .login-btn {
-      border: 2px solid #f15a29;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-weight: 600;
-      color: #f15a29;
-      background-color: transparent;
-    }
-
-    .header-content {
-      margin-top: auto;
-      padding-bottom: 4rem;
-    }
-
-    .header-content h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .header-content p {
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-
-    /* Rental Section */
-    .rental-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4rem 10%;
-    }
-
-    .rental-form {
-      flex: 1;
-      margin-right: 3rem;
-    }
-
-    .rental-form h5 {
-      color: #e84b1e;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .rental-form h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .rental-form p {
-      color: #444;
-      margin-bottom: 1.5rem;
-    }
-
-    .rental-form input,
-    .rental-form textarea {
-      width: 48%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .rental-form input[type="email"],
-    .rental-form input[type="tel"] {
-      width: 48%;
-    }
-
-    .rental-form textarea {
-      width: 100%;
-      resize: none;
-      height: 100px;
-    }
-
-    .form-group {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .rental-form button {
-      width: 100%;
-      padding: 0.8rem;
-      background-color: #e84b1e;
-      border: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    .rental-image {
-      flex: 1;
-    }
-
-    .rental-image img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    @media (max-width: 768px) {
-      .rental-section {
-        flex-direction: column;
-      }
-
-      .form-group {
-        flex-direction: column;
-      }
-
-      .rental-form input,
-      .rental-form textarea {
-        width: 100%;
-      }
-
-      .rental-form {
-        margin-right: 0;
-        margin-bottom: 2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- HEADER SECTION -->
-  <header class="header">
-    <div class="navbar">
-      <img src="https://i.imgur.com/3CxWuFR.png" alt="Avada Logo" height="60">
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Cabin Blog</a></li>
-        <li><a href="#">Real Estate</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><button class="login-btn">LOG IN</button></li>
-      </ul>
-    </div>
-    <div class="header-content">
-      <h1>Unlock Your Cabin’s Full Earning Power With Avada</h1>
-      <p>Full-service property management company in Gatlinburg, Pigeon Forge & Sevierville.</p>
-    </div>
-  </header>
-
-  <!-- RENTAL PROJECTION SECTION -->
-  <section class="rental-section">
-    <div class="rental-form">
-      <h5>Wondering how much more your cabin could earn?</h5>
-      <h2>Claim your rental projection!</h2>
-      <p>
-        Along with your free rental analysis, we’ll provide expert advice tailored to your cabin’s unique potential,
-        helping you achieve the highest possible rental income.
-      </p>
-
-      <div class="form-group">
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avada Cabin Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+   
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <div class="navbar">
+        <img
+          src="https://i.imgur.com/3CxWuFR.png"
+          alt="Avada Logo"
+          height="60"
+        />
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cabin Blog</a></li>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><button class="login-btn">LOG IN</button></li>
+        </ul>
       </div>
-      <div class="form-group">
-        <input type="email" placeholder="Email" />
-        <input type="tel" placeholder="Phone" />
+      <div class="header-content">
+        <h1>Unlock Your Cabin’s Full Earning Power With Avada</h1>
+        <p>
+          Full-service property management company in Gatlinburg, Pigeon Forge &
+          Sevierville.
+        </p>
       </div>
-      <textarea placeholder="Tell us about your cabin"></textarea>
-      <button>GET MY RENTAL PROJECTION</button>
-    </div>
-    <div class="rental-image">
-      <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cabin House">
-    </div>
-  </section>
+    </header>
 
-</body>
+    <!-- RENTAL PROJECTION SECTION -->
+    <section class="rental-section">
+      <div class="rental-form">
+        <h5>Wondering how much more your cabin could earn?</h5>
+        <h2>Claim your rental projection!</h2>
+        <p>
+          Along with your free rental analysis, we’ll provide expert advice
+          tailored to your cabin’s unique potential, helping you achieve the
+          highest possible rental income.
+        </p>
+
+        <div class="form-group">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
+        </div>
+        <textarea placeholder="Tell us about your cabin"></textarea>
+        <button>GET MY RENTAL PROJECTION</button>
+      </div>
+      <div class="rental-image">
+        <img
+          src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Cabin House"
+        />
+      </div>
+    </section>
+
+    <!-- INSIGHT SECTION -->
+    <section class="insight-section">
+      <div class="insight-container">
+        <div class="insight-image">
+          <img
+            src="https://images.unsplash.com/photo-1558872953-9bd42d7ecc01?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Deck View"
+          />
+        </div>
+        <div class="insight-text">
+          <h2>
+            Stop guessing. See what your property can earn with crystal clarity.
+          </h2>
+          <p>
+            Our rental projection will reveal your true earning potential,
+            factoring in local revenue trends and the unique qualities of your
+            property. The data will come from real-time insights across every
+            local listing in our market and will be backed by the expertise of
+            our revenue team, who will take a close, personalized look at your
+            home. This critical human insight is where our real value shines!
+          </p>
+          <p>
+            Think of it as your revenue roadmap. And guess what? Once you
+            receive it, you’re free to use it however you like — no obligations,
+            no pressure from us.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PROMO -->
+    <section class="profits-section">
+      <div class="profits-container">
+        <div class="profits-image">
+          <img src="phone.png" alt="Phone with Calendar" />
+        </div>
+        <div class="profits-content">
+          <h2>We Thrive When Your Profits Soar</h2>
+          <p>
+            Our success is directly tied to yours. We earn when your cabin is
+            booked, so maximizing your revenue with desirable guests and market
+            prices is a top priority. With cutting-edge technology, we
+            continuously optimize pricing, ensuring you’re snagging those
+            top-earning bookings.
+          </p>
+          <div class="highlight-box">
+            <p class="highlight-text">
+              Up to $2,500 more per year? It’s possible!
+            </p>
+            <p>
+              Your cabin could be earning more for you. Our data-driven approach
+              will maximize your nightly rates and keep occupancy high.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-heading">
+        <h2>We’re Rocking a 4.9-Star Rating. This Says It All.</h2>
+        <p class="sub-heading">And the rest of our numbers do, too.</p>
+      </div>
+      <div class="stats-cards">
+        <div class="stat-card">
+          <h3 class="highlight-number">20+</h3>
+          <p><strong>years of expertise among the leadership team</strong></p>
+          <p>For over two decades, our team has specialized in vacation rental management in Gatlinburg, Pigeon Forge, and Sevierville, providing unparalleled insight into the local market.</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="highlight-number">18,000+</h3>
+          <p><strong>five-star reviews</strong></p>
+          <p>With over 18,000 five-star reviews, our guests leave happy — and return even happier.</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="highlight-number">40,000+</h3>
+          <p><strong>successful guest stays</strong></p>
+          <p>Our 40,000 successful guest stays have given us invaluable insights into guest preferences and revenue-boosting practices.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Rating -->
+    <section class="partners-section">
+      <div class="partners-text">
+        <h2>We Set the Gold Standard in Cabin Rental Property Management</h2>
+        <p>
+          We’ve earned top honors like Airbnb Superhost and Vrbo Premier Host status across the properties we manage, unlocking priority visibility, higher bookings, and exclusive perks. These trust badges make your property irresistible — driving more revenue and bringing guests back again and again. <strong>And we only partner with the best in the industry.</strong>
+        </p>
+      </div>
+      <div class="partners-logos">
+        <img src="expedia.png" alt="Expedia" />
+        <img src="hopper.png" alt="Hopper" />
+        <img src="smoky.png" alt="Smoky Mountain Holiday" />
+        <img src="airbnb.png" alt="Airbnb Superhost" />
+        <img src="vrbo.png" alt="Vrbo Premier Host" />
+      </div>
+    </section>
+    <!-- Comparision -->
+    <section class="comparison-table">
+      <div class="heading">
+        <h2>Discover the <span class="highlight">Avada Difference</span></h2>
+        <div class="column-headers">
+          <div class="column avada">
+            <img src="avada-logo.png" alt="Avada Logo" />
+            <p class="desc">Nationwide reach, local expertise, and an innovative edge — your best bet by a mile!</p>
+          </div>
+          <div class="column"><strong>Self Management</strong><p>You, yourself, and all the responsibility!</p></div>
+          <div class="column"><strong>Local Players</strong><p>Have market insight but lack the innovative edge to help properties truly excel.</p></div>
+          <div class="column"><strong>Big Name National Companies</strong><p>Lots of reach, but they lack local expertise and the insights needed to help properties truly thrive.</p></div>
+        </div>
+      </div>
+    
+      <table>
+        <thead>
+          <tr><th>Feature</th><th>Avada</th><th>Self Mgmt</th><th>Local Players</th><th>Big Names</th></tr>
+        </thead>
+        <tbody>
+          <tr class="section"><td colspan="5">Admin</td></tr>
+          <tr>
+            <td>No binding, no long-term contract — easy to leave anytime</td>
+            <td class="yes"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
+          </tr>
+          <tr>
+            <td>No hidden fees — just honest, upfront pricing!</td>
+            <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
+          </tr>
+          <tr>
+            <td>Dedicated Owner Relations Manager – your personal point of contact.</td>
+            <td class="yes"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
+          </tr>
+          <tr>
+            <td>Taxes collected and submitted for you</td>
+            <td class="yes"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+          </tr>
+    
+          <tr class="section"><td colspan="5">Cleaning & Maintenance</td></tr>
+          <tr>
+            <td>Personal touch and genuine connections with owners.</td>
+            <td class="yes"></td><td class="no"></td><td class="yes"></td><td class="no"></td>
+          </tr>
+          <tr>
+            <td>Highly trained in-house maintenance team – reliable and efficient.</td>
+            <td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+          </tr>
+          <tr>
+            <td>Team of inspectors (separate from cleaning) – ensuring top-tier quality.</td>
+            <td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+  </body>
 </html>
